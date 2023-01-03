@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "463888941632",
+    "project_id": "thinkshow-71d1d",
+    "storage_bucket": "thinkshow-71d1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463888941632:android:50aaf6997125b0805dd5a5",
+        "android_client_info": {
+          "package_name": "com.thinksmk.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463888941632-gkv0s1lj4c4b3m6i5rekl8v4j84v49ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfH1ij1hmNNxXpDhiM5J-xVLcrQB2c1gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463888941632-gkv0s1lj4c4b3m6i5rekl8v4j84v49ml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "463888941632-kckg44auugcrrie1dtgrrvjo8tthujds.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thinksmk.partner"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463888941632:android:d591a1374a49f6fa5dd5a5",
+        "android_client_info": {
+          "package_name": "com.thinksmk.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463888941632-gkv0s1lj4c4b3m6i5rekl8v4j84v49ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfH1ij1hmNNxXpDhiM5J-xVLcrQB2c1gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463888941632-gkv0s1lj4c4b3m6i5rekl8v4j84v49ml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "463888941632-kckg44auugcrrie1dtgrrvjo8tthujds.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thinksmk.partner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

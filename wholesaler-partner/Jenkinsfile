@@ -1,0 +1,56 @@
+// // changed file name
+// def appname = "Runner"
+// def xcarchive = "${appname}.xcarchive"
+//
+// pipeline {
+//     agent { label 'Built-In_Node' } //Change this to whatever your flutter jenkins nodes are labeled.
+//     environment {
+//         DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/"  //This is necessary for Fastlane to access iOS Build things.
+//         // PATH = "/Users/jenkins/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin/flutter:/usr/local/Caskroom/android-sdk/4333796//tools:/usr/local/Caskroom/android-sdk/4333796//platform-tools:/Applications/Xcode.app/Contents/Developer"
+//         PATH = "/Users/jenkins/.rbenv/shims:/opt/homebrew/Caskroom/flutter/2.8.1/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
+//     }
+//     stages {
+//         stage ('Checkout') {
+//             steps {
+//                 step([$class: 'WsCleanup'])
+//                 checkout scm
+//                 sh "rm -rf build"
+//                 sh "git clone --depth 1 https://github.com/sajaddmon/wholesaler-partner.git"
+//                 // sh "mv goalslite_build_ios ios/fastlane" //This moves the just checked out goalslite_build_ios to the fastlane directory for easier importing
+//             }
+//         }
+//
+//         // stage ('Flutter Doctor') {
+//         //     steps {
+//         //         sh "flutter doctor -v"
+//         //     }
+//         // }
+//
+//         stage ('Android Build') {
+//             steps {
+//                 sh "flutter build appbundle"
+//             }
+//         }
+//         stage('Distribute Android APK') {
+//             steps {
+//                 appCenter apiToken: '97251d4d57b55620cd375cc39988077c0e93862e',
+//                         ownerName: 'sajadmaster-gmail.com',
+//                         appName: 'Wholesaler',
+//                         pathToApp: 'build/app/outputs/bundle/release/app-release.aab',
+//                         distributionGroups: 'Collaborators'
+//             }
+//         }
+//
+//     }
+//     post {
+//         // Clean after build
+//         always {
+//             cleanWs(cleanWhenNotBuilt: false,
+//                     deleteDirs: true,
+//                     disableDeferredWipeout: true,
+//                     notFailBuild: true,
+//                     patterns: [[pattern: '.gitignore', type: 'INCLUDE'],
+//                                [pattern: '.propsfile', type: 'EXCLUDE']])
+//         }
+//     }
+// }

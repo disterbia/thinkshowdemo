@@ -1,0 +1,8 @@
+app_identifier("com.thinksmk.partner") # The bundle identifier of your app
+apple_id("thinkshow88@gmail.com") # Your Apple email address
+
+itc_team_id("FT65LHRXXJ") # App Store Connect Team ID
+team_id("FDSSB5K4VH") # Developer Portal Team ID
+
+
+
